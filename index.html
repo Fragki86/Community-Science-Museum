@@ -20,7 +20,96 @@
 <body>
     <!-- Header -->
     <header>
-        
+        <a href="index.html">
+          <img src="icons/logo.png" class="logo">
+        </a>
+        <nav id="nav">
+          <ul>
+            <li><img src="icons/museum.png"><a href="index.html" class="current">Museum</a></li>
+            <li><img src="icons/exhibition.png"><a href="exhibitions.html">Exhibitions</a></li>
+            <li><img src="icons/explore.png"><a href="explore.html">Explore</a></li>
+            <li><img src="icons/events.png"><a href="special-events.html">Special Events</a></li>
+            <li><img src="icons/visit.png"><a href="visit.html">Visit</a></li>
+            <li class="search-bar-form-desktop"><form method="POST" action="search-results.html">
+              <a href="search-results.html">
+              <input type="search" name="search" id="search-desktop" placeholder="Search" aria-label="search-form">
+              </a>
+              <button type="submit" class="search-button-desktop" aria-label="press to search"><i class="fas fa-search"></i></button>
+            </form></li>
+          </ul>
+          <input type="checkbox" id="hamburger-menu">
+          <label for="hamburger-menu" class="ham">
+            <i class="fas fa-bars"></i>
+          </label>
+        </nav>
     </header>
+    <!-- Main -->
+    <main>
+      <img src="images/home-page.jpg" alt="child-staring-at-mathematical-equations" class="home-img">
+      <h1>Let's explore together</h1>
+        <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all. 
+        </p>
+        <p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from 
+          galaxies far away to the very building blocks of life itself. 
+        </p>
+        <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion
+           to continue the exploration of the world around us. 
+        </p>
+        <p>We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits 
+          on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come 
+          to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home). 
+        </p>
+      <h1>Exhibitions</h1>
+        <h2>Cosmology</h2>
+        <img src="images/cosmonaut.jpg">
+        <h2>Evolution</h2>
+        <img src="images/evolution.jpg">
+        <h2>Biology and Medicine</h2>
+        <img src="images/biology-medicine.jpg">
+        <h2>Ecology</h2>
+        <img src="images/ecology.jpg">
+        <h2>Robotics and AI</h2>
+        <img src="images/ai.jpg">
+        <h2>Renewable Energy</h2>
+        <img src="images/renewable.jpg">
+      <h1>Get Involved</h1>
+        <h2>Support</h2>
+          <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community.
+          </p>
+          <p>You can also support us by donating items of interest to the museum's collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.
+          </p>
+        <h2>Volunteer</h2>
+          <p>A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks, including getting to see behind the scenes of a working museum, access to staff-only lectures,
+             and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strange strategies for the museum.
+          </p>
+          <p>You can help volunteer in a number of different spheres. Please contact us if you'd like to find out more about how you can get involved.
+          </p>
+        <h2>Internships</h2>
+          <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Then you could be just the right person to enjoy an internship at the museum.
+          </p>
+          <p>You will be learning from number of different academics and people who are passionate about science and sharing it with the wider community.
+          </p>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <h2 class="h2-footer">Community Science Museum</h2>
+        <p>Borghild Ruds Vei 3</p>
+        <p>1482 Nittedal</p>
+        <p>Tel: 67 05 90 90</p>
+        <p>info@csm.no</p>
+      <h2 class="h2-footer">Sign up to our newsletter</h2>
+        <form method="POST">
+          <input type="text" name="first-name" placeholder="First Name">
+          <input type="text" name="last-name" placeholder="Last Name">
+          <input type="email" name="email" placeholder="Email">
+          <input type="submit" name="submit">
+        </form>
+      <h2>Find us also</h2>
+        <img src="icons/twitter.png">
+        <img src="icons/facebook.png">
+        <img src="icons/instagram.png">
+        <img src="icons/youtube.png">
+        <img src="icons/linkedin.png">
+    </footer>
 </body>
 </html>
