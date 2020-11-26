@@ -183,20 +183,67 @@ footer h2{
     color: var(--gray-nav);
     text-decoration: underline;
     font-size: 0.8rem;
+    margin-top: 15px;
+    padding-top: 20px;
 }
 
-
-footer p {
+footer a {
     font-family: 'Nunito', sans-serif;
+    font-size: 0.7rem;
     color: var(--gray-nav);
-    width: 50%;
     margin: 0px auto;
     text-align: center;
+    text-decoration: none;
+}
+
+.basic-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 150px;
+    max-width: 350px;
+    margin: 0px auto;
+}
+
+footer input {
+    margin: 2px auto;
+    border-radius: 5px;
+    border: none;
+}
+
+footer button {
+    width: 40%;
+    min-width: 100px;
+    max-width: 100px;
+    margin: 10px auto 0px auto;
+    background-color: var(--brown);
+    color: var(--gray-nav);
+    border-radius: 15px;
+    border: 1px solid var(--gray-nav);
+    padding: 5px;
+}
+
+footer button:hover {
+    background-color: var(--gray-nav);
+    color: var(--brown);
+
 }
 
 .social-media {
     margin: 5px auto 0px auto;
-    text-align: center;
+    padding-bottom: 15px;
+    min-width: 200px;
+    max-width: 300px;
+    width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
