@@ -37,7 +37,7 @@ footer {
 
 .separator {
     display: block;
-    margin-top: 10px;
+    margin: 15px 0px;
     background-color: var(--light-brown);
     border: solid 1px var(--brown);
 }
@@ -54,7 +54,7 @@ h1 {
 }
 
 .h1-starter {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 h2 {
@@ -63,6 +63,12 @@ h2 {
     font-size: 1rem;
     margin: 10px auto 5px auto;
     text-align: center;
+}
+
+.h2-for-text-titles {
+  font-family: 'Nunito', sans-serif;
+  color: var(--brown);
+  text-decoration: underline;
 }
 
 p {
@@ -85,9 +91,27 @@ p {
 .home-img {
     display: block;
     width: 80%;
+    max-width: 450px;
     margin: 10px auto 30px auto;
 }
 
+.img-exhibitions-landing {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.img-explore-landing {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.img-events {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+}
 
 /*  Navigation & Control Panel 
 ------------------------------- */
@@ -117,11 +141,6 @@ nav {
   animation-duration: 450ms;
   animation-timing-function: ease-out;
 }
-
-@keyframes scroll-in {
-    0% {right: -100%;}
-    100% {right: 0%;}
-  }
 
 nav a {
   font-size: 1rem;
@@ -219,24 +238,6 @@ footer input {
     margin: 2px auto;
     border-radius: 5px;
     border: none;
-}
-
-footer button {
-    width: 40%;
-    min-width: 100px;
-    max-width: 100px;
-    margin: 10px auto 0px auto;
-    background-color: var(--brown);
-    color: var(--gray-nav);
-    border-radius: 15px;
-    border: 1px solid var(--gray-nav);
-    padding: 5px;
-}
-
-footer button:hover {
-    background-color: var(--gray-nav);
-    color: var(--brown);
-
 }
 
 .social-media {

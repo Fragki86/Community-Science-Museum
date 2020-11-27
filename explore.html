@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exhibitions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Current exhibitions of Community Science Museum"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+          <img src="icons/logo.png" class="logo">
+        </a>
+        <section id="mobile-version-nav">
+          <input type="checkbox" id="hamburger-menu" />
+          <label for="hamburger-menu" class="ham">
+            <i class="fas fa-bars"></i>
+          </label>
+          <nav id="nav">
+            <ul>
+              <li><img src="icons/museum.png"><a href="index.html">Museum</a></li>
+              <li><img src="icons/exhibition.png"><a href="exhibitions.html">Exhibitions</a></li>
+              <li><img src="icons/explore.png"><a href="explore.html" class="current">Explore</a></li>
+              <li><img src="icons/events.png"><a href="special-events.html">Special Events</a></li>
+              <li><img src="icons/visit.png"><a href="visit.html">Visit</a></li>
+              <li class="search-bar-form-desktop"><form method="POST" action="search-results.html">
+                <a href="search-results.html">
+                <input type="search" name="search" id="search" placeholder="Search" aria-label="search-form">
+                </a>
+                <button type="submit" class="search-button-desktop" aria-label="press to search"><i class="fas fa-search"></i></button>
+              </form></li>
+            </ul>
+          </nav>
+        </section>
+    </header>
+    <!-- Main -->
+    <main>
+        <h1 class="h1-starter">For Kids</h1>
+            <p>Are you a young person looking to learn more about science? Come on down to our museum, there's plenty to see and do.
+            </p>
+            <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits 
+                are designed to be accessible for interested minds, so make sure you come ready to learn and explore.
+            </p>
+            <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you will get to explore and experiment with 
+                our team experts.
+            </p>
+            <p>During the school holidays  we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday
+                we pick new theme to explore. To find out more about the holiday club and how you can join, send us a message.
+            </p>
+        <h1>For teachers</h1>
+            <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students 
+                tours of the  useum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.
+            </p>
+            <p>Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.
+            </p>
+        <h1>Researchers</h1>
+            <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and 
+                contribute towards them.  We have online records, laboratory space, and a working relationship with a number of universities around the country.
+            </p>
+        <img src="images/explore.jpg" class="img-explore-landing">
+    </main>
+    <!-- Footer -->
+    <footer>
+      <h2>Community Science Museum</h2>
+        <div class="basic-info">
+          <a href="http://maps.google.com/?q=Borghild Ruds Vei 3, 1482 Nittedal">Borghild Ruds Vei 3</a>
+          <a href="http://maps.google.com/?q=Borghild Ruds Vei 3, 1482 Nittedal">1482 Nittedal</a>
+          <a href="tel:+47 67 05 90 90">Tel: 67 05 90 90</a>
+          <a href="mailto:info@csm.no">Email: info@csm.no</a>
+        </div>
+      <h2>Sign up to our newsletter</h2>
+        <form method="POST">
+          <input type="text" name="first-name" placeholder="First Name">
+          <input type="text" name="last-name" placeholder="Last Name">
+          <input type="email" name="email" placeholder="Email">
+          <button type="submit" class="sign-up-button" aria-label="press to submit">Sign Up</button>
+        </form>
+      <h2>Find us also</h2>
+        <div class="social-media">
+          <a href="#"><img src="icons/twitter.png" alt="twitter" class="social-icons"></a>
+          <a href="#"><img src="icons/facebook.png" alt="facebook" class="social-icons"></a>
+          <a href="#"><img src="icons/instagram.png" alt="instagram" class="social-icons"></a>
+          <a href="#"><img src="icons/youtube.png" alt="youtube" class="social-icons"></a>
+          <a href="#"><img src="icons/linkedin.png" alt="linkedin" class="social-icons"></a>
+        </div>
+    </footer>
+</body>
+</html>
