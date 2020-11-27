@@ -35,7 +35,7 @@ footer {
     margin: 5px 0px auto 10px;
 }
 
-.exhibitions {
+.separator {
     display: block;
     margin-top: 10px;
     background-color: var(--light-brown);
@@ -51,6 +51,10 @@ h1 {
     font-size: 1.5rem;
     margin: 15px auto 5px auto;
     text-align: center;
+}
+
+.h1-starter {
+  margin-top: 100px;
 }
 
 h2 {
