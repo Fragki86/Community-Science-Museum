@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exhibitions</title>
+    <title>Visit</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Current exhibitions of Community Science Museum"/>
+    <meta name="description" content="Information about the museum and how to reach it"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,8 +33,8 @@
               <li><img src="icons/museum.png"><a href="index.html">Museum</a></li>
               <li><img src="icons/exhibition.png"><a href="exhibitions.html">Exhibitions</a></li>
               <li><img src="icons/explore.png"><a href="explore.html">Explore</a></li>
-              <li><img src="icons/events.png"><a href="special-events.html" class="current">Special Events</a></li>
-              <li><img src="icons/visit.png"><a href="visit.html">Visit</a></li>
+              <li><img src="icons/events.png"><a href="special-events.html">Special Events</a></li>
+              <li><img src="icons/visit.png"><a href="visit.html" class="current">Visit</a></li>
               <li class="search-bar-form-desktop"><form method="POST" action="search-results.html">
                 <a href="search-results.html">
                 <input type="search" name="search" id="search" placeholder="Search" aria-label="search-form">
@@ -49,12 +49,18 @@
     <main>
         <h1 class="h1-starter">Location</h1>
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.2474916387343!2d10.877995816101299!3d60.044126181914685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46417732e279601b%3A0x637787776d59682!2sKulturverket%20Flammen!5e0!3m2!1sno!2sno!4v1606744291071!5m2!1sno!2sno" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <p>Borghild Ruds Vei 3</p>
-            <p>1482 Nittedal</p>
-            <a href="tel:+47 67 05 90 90">Tel: 67 05 90 90</a>
-            <a href="mailto:info@csm.no">Email: info@csm.no</a>
-            <p>Bus: 504, 495 (Oslo-Nittedal)
-                Train: R30, L30 (Oslo S - Nittedal)</p>
+            <div class="visit">
+                <div class="location-info">
+                    <p>Borghild Ruds Vei 3</p>
+                    <p>1482 Nittedal</p>
+                    <p><a href="tel:+47 67 05 90 90">Tel: 67 05 90 90</a></p>
+                    <p><a href="mailto:info@csm.no">Email: info@csm.no</a></p>
+                </div>
+                <div class="how-to-come">
+                    <p>Bus: 504, 495 (Oslo-Nittedal)</p>
+                    <p>Train: R30, L30 (Oslo S - Nittedal)</p>
+                </div>
+            </div>
         <h1>Admission</h1>
             <p>The entrance is free for all.</p>
             <p>There are guided tours of the museum that leave every hour. 
@@ -65,13 +71,24 @@
                 tour.</p>
         <h1>Hours</h1>
             <div class="opening-hours">
-                <p><span>Monday:</span> Closed</p>
-                <p><span>Tuesday:</span> 10:00 - 16:00</p>
-                <p><span>Wednesday:</span> 10:00 - 16:00</p>
-                <p><span>Thursday:</span> 10:00 - 16:00</p>
-                <p><span>Friday:</span> 10:00 - 19:00</p>
-                <p><span>Saturday:</span> 09:00 - 16:00</p>
-                <p><span>Sunday:</span> 09:00 - 13:00</p>
+                <div class="days">
+                <p><span>Monday:</span></p>
+                <p><span>Tuesday:</span></p>
+                <p><span>Wednesday:</span></p>
+                <p><span>Thursday:</span></p>
+                <p><span>Friday:</span></p>
+                <p><span>Saturday:</span></p>
+                <p><span>Sunday:</span></p>
+                </div>
+                <div class="hours">
+                    <p>Closed</p>
+                    <p>10:00 - 16:00</p>
+                    <p>10:00 - 16:00</p>
+                    <p>10:00 - 16:00</p>
+                    <p>10:00 - 19:00</p>
+                    <p>09:00 - 16:00</p>
+                    <p>09:00 - 13:00</p>
+                </div>
             </div>
         <h1>Accessibility</h1>
             <p>The museum has wheelchair accessibility ramps. It has also 

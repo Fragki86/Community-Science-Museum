@@ -1,56 +1,56 @@
 /* --------------------------- Global  Styles --------------------------- */
 :root {
-    --orange: #e98000;
-    --blue: #008f95;
-    --gray-nav: #ede9e5;
-    --gray-bg: #f8f5f2;
-    --brown: #836c40;
-    --light-brown: #F8ECDF;
+  --orange: #e98000;
+  --blue: #008f95;
+  --gray-nav: #ede9e5;
+  --gray-bg: #f8f5f2;
+  --brown: #836c40;
+  --light-brown: #F8ECDF;
 }
 
 body {
-    background: var(--gray-bg);
-    margin: 0;
+  background: var(--gray-bg);
+  margin: 0;
 }
 
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background: var(--gray-nav);
-    box-shadow: 0px 2px 10px #000000;
-    position: fixed;
-    top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: var(--gray-nav);
+  box-shadow: 0px 2px 10px #000000;
+  position: fixed;
+  top: 0px;
 }
 
 footer {
-    background: var(--brown);
+  background: var(--brown);
 }
 
 .logo {
-    display: inline;
-    width: 30%;
-    min-width: 100px;
-    max-width: 150px;
-    margin: 5px 0px auto 10px;
+  display: inline;
+  width: 30%;
+  min-width: 100px;
+  max-width: 150px;
+  margin: 5px 0px auto 10px;
 }
 
 .separator {
-    display: block;
-    margin: 15px 0px;
-    background-color: var(--light-brown);
-    border: solid 1px var(--brown);
+  display: block;
+  margin: 15px 0px;
+  background-color: var(--light-brown);
+  border: solid 1px var(--brown);
 }
 
 
 /* -- Headers & Paragraphs 
 ------------------------------- */
 h1 {
-    font-family: 'Fredericka the Great', cursive;
-    color: var(--blue);
-    font-size: 1.5rem;
-    margin: 25px auto 5px auto;
-    text-align: center;
+  font-family: 'Fredericka the Great', cursive;
+  color: var(--blue);
+  font-size: 1.5rem;
+  margin: 25px auto 5px auto;
+  text-align: center;
 }
 
 .h1-starter {
@@ -58,11 +58,11 @@ h1 {
 }
 
 h2 {
-    font-family: 'Fredericka the Great', cursive;
-    color: var(--blue);
-    font-size: 1rem;
-    margin: 10px auto 5px auto;
-    text-align: center;
+  font-family: 'Fredericka the Great', cursive;
+  color: var(--blue);
+  font-size: 1rem;
+  margin: 10px auto 5px auto;
+  text-align: center;
 }
 
 .h2-for-text-titles {
@@ -73,33 +73,75 @@ h2 {
 }
 
 p {
-    font-family: 'Nunito', sans-serif;
-    color: var(--brown);
-    font-size: 0.7rem;
-    width: 80%;
-    margin: 10px auto;
+  font-family: 'Nunito', sans-serif;
+  color: var(--brown);
+  font-size: 0.7rem;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.location-info a{
+  font-family: 'Nunito', sans-serif;
+  color: var(--brown);
+  font-size: 0.7rem;
+}
+
+.visit {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 50% 50%;
+  text-align: right;
+}
+
+
+
+
+.opening-hours {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+}
+
+.opening-hours span {
+  text-decoration: underline;
+}
+
+.days {
+  text-align: right;
+}
+
+.days p {
+  margin-right: 5px;
+}
+
+.hours {
+  text-emphasis: left;
+}
+
+.hours p {
+  margin-left: 0px;
 }
 
 
 /* -- Images & Map
 ------------------------------- */
 .landing-img {
-    display: block;
-    width: 100%;
-    margin: 60px 0px 0px 0px;
+  display: block;
+  width: 100%;
+  margin: 60px 0px 0px 0px;
 }
 
 .home-img {
-    display: block;
-    width: 80%;
-    max-width: 450px;
-    margin: 10px auto 30px auto;
+  display: block;
+  width: 80%;
+  max-width: 450px;
+  margin: 10px auto 30px auto;
 }
 
 .img-exhibitions-landing {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
 }
 
 .img-explore-landing {
@@ -123,7 +165,7 @@ p {
 /*  Navigation & Control Panel 
 ------------------------------- */
 nav {
-    display: none;
+  display: none;
   }
   
 #hamburger-menu {
@@ -178,8 +220,8 @@ nav li {
 }
 
 nav img {
-    padding-right: 15px;
-    margin-left: 20px;
+  padding-right: 15px;
+  margin-left: 20px;
 }
 
 .ham {
@@ -209,53 +251,53 @@ nav img {
 /* -- Footer 
 ------------------------------- */
 footer h2{
-    font-family: 'Nunito', sans-serif;
-    color: var(--gray-nav);
-    text-decoration: underline;
-    font-size: 0.8rem;
-    margin-top: 15px;
-    padding-top: 20px;
+  font-family: 'Nunito', sans-serif;
+  color: var(--gray-nav);
+  text-decoration: underline;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  padding-top: 20px;
 }
 
 footer a {
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.7rem;
-    color: var(--gray-nav);
-    margin: 0px auto;
-    text-align: center;
-    text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.7rem;
+  color: var(--gray-nav);
+  margin: 0px auto;
+  text-align: center;
+  text-decoration: none;
 }
 
 .basic-info {
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
 }
 
 footer form {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    min-width: 150px;
-    max-width: 350px;
-    margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 150px;
+  max-width: 350px;
+  margin: 0px auto;
 }
 
 footer input {
-    margin: 2px auto;
-    border-radius: 5px;
-    border: none;
+  margin: 2px auto;
+  border-radius: 5px;
+  border: none;
 }
 
 .social-media {
-    margin: 5px auto 0px auto;
-    padding-bottom: 15px;
-    min-width: 250px;
-    max-width: 300px;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 5px auto 0px auto;
+  padding-bottom: 15px;
+  min-width: 250px;
+  max-width: 300px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
