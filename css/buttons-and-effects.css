@@ -3,6 +3,16 @@
     100% {right: 0%;}
   }
 
+.search-button{
+    background-color: white;
+    color: var(--orange);
+    border-radius: 20px;
+}
+
+#search {
+    border-radius: 15px;
+}
+
 footer button {
     width: 40%;
     min-width: 100px;

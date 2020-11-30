@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exhibitions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Current exhibitions of Community Science Museum"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+          <img src="icons/logo.png" class="logo">
+        </a>
+        <section id="mobile-version-nav">
+          <input type="checkbox" id="hamburger-menu" />
+          <label for="hamburger-menu" class="ham">
+            <i class="fas fa-bars"></i>
+          </label>
+          <nav id="nav">
+            <ul>
+              <li><img src="icons/museum.png"><a href="index.html">Museum</a></li>
+              <li><img src="icons/exhibition.png"><a href="exhibitions.html">Exhibitions</a></li>
+              <li><img src="icons/explore.png"><a href="explore.html">Explore</a></li>
+              <li><img src="icons/events.png"><a href="special-events.html" class="current">Special Events</a></li>
+              <li><img src="icons/visit.png"><a href="visit.html">Visit</a></li>
+              <li class="search-bar-form-desktop"><form method="POST" action="search-results.html">
+                <a href="search-results.html">
+                <input type="search" name="search" id="search" placeholder="Search" aria-label="search-form">
+                </a>
+                <button type="submit" class="search-button" aria-label="press to search"><i class="fas fa-search"></i></button>
+              </form></li>
+            </ul>
+          </nav>
+        </section>
+    </header>
+    <!-- Main -->
+    <main>
+        <h1 class="h1-starter">Location</h1>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.2474916387343!2d10.877995816101299!3d60.044126181914685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46417732e279601b%3A0x637787776d59682!2sKulturverket%20Flammen!5e0!3m2!1sno!2sno!4v1606744291071!5m2!1sno!2sno" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p>Borghild Ruds Vei 3</p>
+            <p>1482 Nittedal</p>
+            <a href="tel:+47 67 05 90 90">Tel: 67 05 90 90</a>
+            <a href="mailto:info@csm.no">Email: info@csm.no</a>
+            <p>Bus: 504, 495 (Oslo-Nittedal)
+                Train: R30, L30 (Oslo S - Nittedal)</p>
+        <h1>Admission</h1>
+            <p>The entrance is free for all.</p>
+            <p>There are guided tours of the museum that leave every hour. 
+                These tours are 70 NOK per person and include a handy
+                printed guide of the museum.</p>
+            <p>If you would like to organise a guided tour for your group of 6
+                or more people, please contact us in advance to arrange the 
+                tour.</p>
+        <h1>Hours</h1>
+            <div class="opening-hours">
+                <p><span>Monday:</span> Closed</p>
+                <p><span>Tuesday:</span> 10:00 - 16:00</p>
+                <p><span>Wednesday:</span> 10:00 - 16:00</p>
+                <p><span>Thursday:</span> 10:00 - 16:00</p>
+                <p><span>Friday:</span> 10:00 - 19:00</p>
+                <p><span>Saturday:</span> 09:00 - 16:00</p>
+                <p><span>Sunday:</span> 09:00 - 13:00</p>
+            </div>
+        <h1>Accessibility</h1>
+            <p>The museum has wheelchair accessibility ramps. It has also 
+                audio guides and braille display signs for the visually impaired.</p>
+        <h1>Food & drink</h1>
+            <p>There is a cafe attached to the museum where you can get light
+                lunches, soft drinks, coffee, snacks and more.</p>
+        <h1>Shop</h1>
+            <p>Our shop offers a range of souvenirs from the museum as well 
+                as great gifts and activity packs that allow you to continue to 
+                explore science even after you have left the museum.</p>
+            
+    </main>
+    <!-- Footer -->
+    <footer>
+      <h2>Community Science Museum</h2>
+        <div class="basic-info">
+          <a href="http://maps.google.com/?q=Borghild Ruds Vei 3, 1482 Nittedal">Borghild Ruds Vei 3</a>
+          <a href="http://maps.google.com/?q=Borghild Ruds Vei 3, 1482 Nittedal">1482 Nittedal</a>
+          <a href="tel:+47 67 05 90 90">Tel: 67 05 90 90</a>
+          <a href="mailto:info@csm.no">Email: info@csm.no</a>
+        </div>
+      <h2>Sign up to our newsletter</h2>
+        <form method="POST">
+          <input type="text" name="first-name" placeholder="First Name">
+          <input type="text" name="last-name" placeholder="Last Name">
+          <input type="email" name="email" placeholder="Email">
+          <button type="submit" class="sign-up-button" aria-label="press to submit">Sign Up</button>
+        </form>
+      <h2>Find us also</h2>
+        <div class="social-media">
+          <a href="#"><img src="icons/twitter.png" alt="twitter" class="social-icons"></a>
+          <a href="#"><img src="icons/facebook.png" alt="facebook" class="social-icons"></a>
+          <a href="#"><img src="icons/instagram.png" alt="instagram" class="social-icons"></a>
+          <a href="#"><img src="icons/youtube.png" alt="youtube" class="social-icons"></a>
+          <a href="#"><img src="icons/linkedin.png" alt="linkedin" class="social-icons"></a>
+        </div>
+    </footer>
+</body>
+</html>
