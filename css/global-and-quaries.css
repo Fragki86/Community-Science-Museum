@@ -93,9 +93,6 @@ p {
   text-align: right;
 }
 
-
-
-
 .opening-hours {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -121,7 +118,6 @@ p {
 .hours p {
   margin-left: 0px;
 }
-
 
 /* -- Images & Map
 ------------------------------- */
@@ -161,6 +157,7 @@ p {
   width: 80%;
   margin: 20px auto 10px auto;
 }
+
 
 /*  Navigation & Control Panel 
 ------------------------------- */
@@ -302,3 +299,36 @@ footer input {
 
 
 
+/* --------------------------- Desktop Styles --------------------------- */
+@media only screen and (min-width:901px) {
+  /* No Show
+  ------------------------------- */
+.ham {
+  display: none;
+}
+
+
+
+
+.logo {
+  width: 100%;
+}
+
+/*  Navigation & Control Panel 
+------------------------------- */
+nav {
+  display: inline;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+}
