@@ -75,7 +75,7 @@ h2 {
 p {
   font-family: 'Nunito', sans-serif;
   color: var(--brown);
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   width: 80%;
   margin: 10px auto;
 }
@@ -100,7 +100,7 @@ p {
 }
 
 .opening-hours span {
-  text-decoration: underline;
+  font-weight: 700;
 }
 
 .days {
@@ -212,8 +212,6 @@ nav li {
   min-width: 230px;
   align-items: center;
   background: var(--gray);
-  border-right: solid 2px var(--red);
-  border-left: solid 2px var(--red);
 }
 
 nav img {
@@ -304,28 +302,111 @@ footer input {
   display: none;
 }
 
-
-
 .logo {
   width: 100%;
 }
 
+
+/* -- Headers & Paragraphs 
+------------------------------- */
+h1 {
+  font-size: 2.5rem;
+}
+
+.h1-starter {
+  margin-top: 90px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.location-info a{
+  font-size: 1.3rem;
+}
+
+.visit {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 50% 50%;
+  text-align: right;
+}
+
+.p-visit {
+  width: 70%;
+}
+
+.opening-hours {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+}
+
+.days {
+  text-align: right;
+}
+
+.days p {
+  margin-right: 5px;
+}
+
+.hours {
+  text-emphasis: left;
+}
+
+.hours p {
+  margin-left: 0px;
+}
+
+
 /*  Navigation & Control Panel 
 ------------------------------- */
 nav {
-  position: relative;
-  background: var(--gray-bg);
-  right: 0px;
-  top: 55px;
-  width: 80%;
-  min-width: 240px;
-  max-width: 350px;
-  border: 2px solid var(--orange);
-  border-radius: 15px 0px 0px 15px;
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  min-width: 50%;
+  max-width: 100%;
+  display: inline;
+  animation: none;
+  border: none;
+  background: none;
 }
+
+/*
+
+*/
+
 
 nav ul {
- 
+  display: flex;
+  flex-direction: row;
 }
 
+nav li {
+  display: flex;
+  justify-content: start;
+  height: 35px;
+  width: 80%;
+  min-width: 230px;
+  align-items: center;
+  background: var(--gray);
+}
+
+nav a {
+  font-size: 1rem;
+  font-weight: 450;
+  text-decoration: none;
+  color:  var(--brown);
+  font-family: 'Nunito', sans-serif;
+}
+
+nav img {
+  padding-right: 15px;
+  margin-left: 20px;
+}
 }
