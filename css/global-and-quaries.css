@@ -274,9 +274,6 @@ footer a {
 footer form {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  min-width: 150px;
-  max-width: 350px;
   margin: 0px auto;
 }
 
@@ -309,7 +306,6 @@ footer input {
 
 
 
-
 .logo {
   width: 100%;
 }
@@ -317,18 +313,19 @@ footer input {
 /*  Navigation & Control Panel 
 ------------------------------- */
 nav {
-  display: inline;
-}
-
-#nav-bar {
-  display: flex;
-  flex-direction: row;
+  position: relative;
+  background: var(--gray-bg);
+  right: 0px;
+  top: 55px;
+  width: 80%;
+  min-width: 240px;
+  max-width: 350px;
+  border: 2px solid var(--orange);
+  border-radius: 15px 0px 0px 15px;
 }
 
 nav ul {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+ 
 }
 
 }
