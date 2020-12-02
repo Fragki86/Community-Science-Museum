@@ -385,16 +385,15 @@ nav {
 nav ul {
   display: flex;
   flex-direction: row;
+  padding-left: 0px;
+  margin-left: 60px;
 }
 
 nav li {
   display: flex;
-  justify-content: start;
-  height: 35px;
   width: 80%;
-  min-width: 230px;
-  align-items: center;
-  background: var(--gray);
+  min-width: 200px;
+  justify-content: left;
 }
 
 nav a {
@@ -411,8 +410,21 @@ nav img {
   margin-left: 40px;
 }
 
+.search-bar-form {
+  width: 30%;
+}
+
 .current {
   text-decoration: none;
   border-bottom: 2px solid var(--orange);
 }
+
+.img-up-row {
+  display: flex;
+}
+
+.img-bottom-row {
+  display: flex;
+}
+
 }
