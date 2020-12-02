@@ -363,6 +363,13 @@ p {
 }
 
 
+/* -- Images & Map
+------------------------------- */
+.home-img {
+  width: 100%;
+}
+
+
 /*  Navigation & Control Panel 
 ------------------------------- */
 nav {
@@ -390,24 +397,26 @@ nav ul {
 }
 
 nav li {
+  font-size: 1rem;
+  font-weight: 450;
+  text-decoration: none;
+  min-width: 100px;
   display: flex;
-  width: 80%;
-  min-width: 200px;
-  justify-content: left;
+  color: var(--brown);
 }
 
 nav a {
   font-size: 1rem;
   font-weight: 450;
   text-decoration: none;
-  color:  var(--brown);
-  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--brown);
 }
 
 nav img {
   width: 10%;
   padding-right: 10px;
-  margin-left: 40px;
 }
 
 .search-bar-form {
@@ -421,10 +430,12 @@ nav img {
 
 .img-up-row {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .img-bottom-row {
   display: flex;
+  justify-content: space-evenly;
 }
 
 }
