@@ -414,17 +414,16 @@ nav ul {
   display: flex;
   flex-direction: row;
   margin-left: 0px;
-  min-width: 950px;
+  min-width: 900px;
 }
 
 nav li {
   min-width: 100px;
-  color: var(--brown);
+  height: 4.5vh;
 }
 
 nav a {
   font-size: 1.1rem;
-  font-weight: 450;
   text-decoration: none;
   display: flex;
   justify-content: space-evenly;
