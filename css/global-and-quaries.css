@@ -142,6 +142,13 @@ p {
   margin: 10px auto 30px auto;
 }
 
+.img-exhibition-groups {
+  display: block;
+  width: 80%;
+  max-width: 450px;
+  margin: 10px auto 30px auto;
+}
+
 .img-exhibitions-landing {
   display: block;
   width: 80%;
@@ -317,8 +324,7 @@ footer input {
 
 .logo-desktop {
   width: 35%;
-  min-width: 131px;
-  max-width: 131px;
+  width: 130px;
   display: block;
   margin: 10px auto;
 }
@@ -335,11 +341,12 @@ h1 {
 }
 
 .h1-starter {
-  margin-top: 90px;
+  margin-top: 0px;
 }
 
 h2 {
   font-size: 1.5rem;
+  margin-top: 30px;
 }
 
 p {
@@ -395,14 +402,41 @@ p {
   width: 90%;
 }
 
+.img-exhibitions-landing {
+  width: 85%;
+  grid-row: 1/6;
+  grid-column: 2;
+  min-width: 360px;
+}
+
+.img-exhibition-groups {
+  width: 90%;
+  min-width: 300px;;
+  grid-column: 2;
+  grid-row: 1/8;
+  margin: auto auto;
+}
+
+.img-explore-landing {
+  width: 800px;
+  height: 1213px;
+  min-width: 300px;;
+  grid-column: 2;
+  grid-row: 1/8;
+  margin: auto auto;
+
+}
 
 /*  Navigation & Control Panel 
 ------------------------------- */
+#nav-bar {
+  position: relative;
+}
+
 nav {
   width: 50%;
-  top: 0px;
-  min-width: 1200px;
-  max-width: 100px;
+  top: -75px;
+  right: -42%;
   margin: auto auto;
   display: flex;
   animation: none;
@@ -413,16 +447,17 @@ nav {
 nav ul {
   display: flex;
   flex-direction: row;
-  margin-left: 0px;
+  position: relative;
+  margin-left: 50px;
   min-width: 950px;
 }
 
 nav li {
-  min-width: 100px;
+  min-width: 65px;
   height: 4.5vh;
 }
 
-nav a {
+nav a{
   font-size: 1.1rem;
   text-decoration: none;
   display: flex;
@@ -441,7 +476,7 @@ nav a {
 }
 
 
-/*  Exhibition
+/*  Exhibition Images on Home Page
 -----------------------*/
 .img-up-row {
   display: flex;
@@ -460,5 +495,47 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 50px;
+  margin-top: 60px;
+}
+
+/*  Exhibitions
+-----------------------*/
+.exhibitions-beginning {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  margin: 100px auto 40px auto;
+}
+
+.exhibitions-beginning > p {
+  grid-column: 1;
+}
+
+.exhibition-groups {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  margin: auto auto;
+}
+
+/*  Explore
+-----------------------*/
+.explore-grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  margin: 100px auto 40px auto;
+}
+
+.explore-grid > p {
+  grid-column: 1;
+  width: 90%;
+}
+
+.explore-grid > h1 {
+  grid-column: 1;
 }
 }

@@ -20,68 +20,78 @@
 <body>
     <!-- Header -->
     <header>
+      <div class="header-desktop">
         <a href="index.html">
           <img src="icons/logo.png" class="logo">
+          <img src="icons/logo-big.png" class="logo-desktop">
         </a>
-        <section id="mobile-version-nav">
+        <section id="nav-bar">
           <input type="checkbox" id="hamburger-menu" />
           <label for="hamburger-menu" class="ham">
             <i class="fas fa-bars"></i>
           </label>
           <nav id="nav">
+            <div class="nav-desktop">
             <ul>
               <li><img src="icons/museum.png"><a href="index.html">Museum</a></li>
               <li><img src="icons/exhibition.png"><a href="exhibitions.html" class="current">Exhibitions</a></li>
               <li><img src="icons/explore.png"><a href="explore.html">Explore</a></li>
-              <li><img src="icons/events.png"><a href="special-events.html">Special Events</a></li>
+              <li><img src="icons/events.png"><a href="special-events.html">Events</a></li>
               <li><img src="icons/visit.png"><a href="visit.html">Visit</a></li>
-              <li class="search-bar-form-desktop"><form method="POST" action="search-results.html">
+              <li class="search-bar-form-desktop"><form method="POST" action="search-results.html" class="search-form">
                 <a href="search-results.html">
-                <input type="search" name="search" id="search" placeholder="Search" aria-label="search-form">
+                <input type="search" name="search" id="search" placeholder=" Search" aria-label="search-form">
                 </a>
                 <button type="submit" class="search-button" aria-label="press to search"><i class="fas fa-search"></i></button>
               </form></li>
             </ul>
+            </div>
           </nav>
         </section>
+      </div>
     </header>
     <!-- Main -->
     <main>
-      <h1 class="h1-starter">Exhibitions</h1>
-        <p>Community Science Museum offers a variety of exhibitions that attract both children and adults. We focus on the educational aspects of our exhibits
-           by presenting them to the audience in a way that will be memorable for a long time after their visit. Everybody has the right for knowledge and 
-           here you can learn about Newtonian physics,  how our world progressed through the centuries and how the ecosystem around us works. Among these as
-           well you can attend many experiments about renewable energy, the spectacular world of AI and learn how biology and medicine come together to help 
-           humanity.
-        </p>
-        <p>The majority of our exhibitions have an interactive style, something that makes them even more attractive for big and small children.
-        </p>
-        <p>We try to change our exhibitions every time we think that something exciting has come up and it needs to be shown to the public. The time that an 
-           exhibition is open to the public varies between 6-12 months and we always announce in advance the last day of them. 
-        </p>
-        <p>We would like your feedback and your thoughts about the current exhibitions after your visit, as well with possible wishes or suggestions that you 
-           may have for a future exhibition.
-        </p>
-      <img src="images/exhibitions.jpg" class="img-exhibitions-landing">
-        <div class="separator">
-        <h2>Cosmology</h2>
-          <img src="images/cosmonaut.jpg" alt="an astronaut in sitting in a shuttle" class="home-img">
-          <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, 
-             explores the night sky and what we can see and know about the universe around 
-             us. We’ll locate the various constellations and galaxies that can be seen and learn a 
-             bit about the early navigators who used the stars to travel by. 
+      <div class="exhibitions-beginning">
+        <h1 class="h1-starter">Exhibitions</h1>
+          <p>Community Science Museum offers a variety of exhibitions that attract both children and adults. We focus on the educational aspects of our exhibits
+             by presenting them to the audience in a way that will be memorable for a long time after their visit. Everybody has the right for knowledge and 
+             here you can learn about Newtonian physics,  how our world progressed through the centuries and how the ecosystem around us works. Among these as
+             well you can attend many experiments about renewable energy, the spectacular world of AI and learn how biology and medicine come together to help 
+             humanity.
           </p>
-          <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s 
-             telescope, to the latest exploration of the planets in our solar system.
+          <p>The majority of our exhibitions have an interactive style, something that makes them even more attractive for big and small children.
           </p>
-          <button class="read-more">Read More</button>
+          <p>We try to change our exhibitions every time we think that something exciting has come up and it needs to be shown to the public. The time that an 
+             exhibition is open to the public varies between 6-12 months and we always announce in advance the last day of them. 
+          </p>
+          <p>We would like your feedback and your thoughts about the current exhibitions after your visit, as well with possible wishes or suggestions that you 
+             may have for a future exhibition.
+          </p>
+        <img src="images/exhibitions.jpg" class="img-exhibitions-landing">
+      </div>
+      <div class="separator">
+        <div class="exhibition-groups">
+          <h2>Cosmology</h2>
+            <img src="images/cosmonaut.jpg" alt="an astronaut in sitting in a shuttle" class="img-exhibition-groups">
+            <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, 
+               explores the night sky and what we can see and know about the universe around 
+               us. We’ll locate the various constellations and galaxies that can be seen and learn a 
+               bit about the early navigators who used the stars to travel by. 
+            </p>
+            <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s 
+               telescope, to the latest exploration of the planets in our solar system.
+            </p>
+            <button class="read-more">Read More</button>
         </div>
-        <h2>Evolution</h2>
-        <img src="images/evolution.jpg" alt="evolution of human sceleton" class="home-img">
-            <p>For centuries, philosophers and scientists have wrestled with the question of our 
-             origins. Where do we come from and how did we get here? Since Darwin proposed
-             his theory of evolution we have had a framework for exploring and understanding 
-             our place in this world.
+      </div>
+        <div class="exhibition-groups">
+          <h2>Evolution</h2>
+          <img src="images/evolution.jpg" alt="evolution of human sceleton" class="img-exhibition-groups">
+          <p>For centuries, philosophers and scientists have wrestled with the question of our 
+           origins. Where do we come from and how did we get here? Since Darwin proposed
+           his theory of evolution we have had a framework for exploring and understanding 
+           our place in this world.
           </p>
           <p>Discover the origins of life on this planet and how the species we know today have 
              evolved our time. You can also take some time to meet a few of the creatures who 
@@ -89,9 +99,11 @@
              dinosaurs too. 
           </p>
           <button class="read-more">Read More</button>
-        <div class="separator">
-        <h2>Biology and Medicine</h2>
-          <img src="images/biology-medicine.jpg" alt="a child is looking though microscope" class="home-img">
+        </div>
+      <div class="separator">
+        <div class="exhibition-groups">
+          <h2>Biology and Medicine</h2>
+          <img src="images/biology-medicine.jpg" alt="a child is looking though microscope" class="img-exhibition-groups">
           <p>From micro-organisms to the human body, major breakthroughs in biology are 
              offering us unique insights into the great wonders of the tiny world.
           </p>
@@ -105,8 +117,10 @@
           </p>
           <button class="read-more">Read More</button>
         </div>
-        <h2>Ecology</h2>
-          <img src="images/ecology.jpg" alt="sunlight through a forrest" class="home-img">
+      </div>
+        <div class="exhibition-groups">
+          <h2>Ecology</h2>
+          <img src="images/ecology.jpg" alt="sunlight through a forrest" class="img-exhibition-groups">
           <p>As we learn more and more of the impact humans are having on the planet, the 
              more important it becomes that scientists explore how to create a sustainable future
              not just for humans but for the whole planet. 
@@ -116,9 +130,11 @@
              the positive ways we can all contribute to a brighter future. 
           </p>
           <button class="read-more">Read More</button>
-        <div class="separator">
+        </div>
+      <div class="separator">
+        <div class="exhibition-groups">
           <h2>Robotics and AI</h2>
-          <img src="images/ai.jpg" alt="a child with AI googles" class="home-img">
+          <img src="images/ai.jpg" alt="a child with AI googles" class="img-exhibition-groups">
           <p>The information revolution is here and robotics and artificial intelligence are the 
              science of the future. From useful home applications of AI to industrial uses of 
              robotics, the future is here. You can even say hello and shake the hand of Rob the
@@ -131,8 +147,10 @@
           </p>
           <button class="read-more">Read More</button>
         </div>
-        <h2>Renewable Energy</h2>
-          <img src="images/renewable.jpg" alt="a windturbin out in the open" class="home-img">
+      </div>
+        <div class="exhibition-groups">
+          <h2>Renewable Energy</h2>
+          <img src="images/renewable.jpg" alt="a windturbin out in the open" class="img-exhibition-groups">
           <p>Renewable energy, often referred to as clean energy, comes from natural sources or 
              processes that are constantly replenished. For example, sunlight or wind keep 
              shining and blowing, even if their availability depends on time and weather.
@@ -141,30 +159,37 @@
              power supplying in our daily lives.
           </p>
           <button class="read-more">Read More</button>
+        </div>
     </main>
     <!-- Footer -->
     <footer>
-      <h2>Community Science Museum</h2>
-        <div class="basic-info">
-          <a href="http://maps.google.com/?q=Borghild Ruds Vei 3, 1482 Nittedal">Borghild Ruds Vei 3</a>
-          <a href="http://maps.google.com/?q=Borghild Ruds Vei 3, 1482 Nittedal">1482 Nittedal</a>
-          <a href="tel:+47 67 05 90 90">Tel: 67 05 90 90</a>
-          <a href="mailto:info@csm.no">Email: info@csm.no</a>
+      <div>
+        <h2>Community Science Museum</h2>
+          <div class="basic-info">
+            <a href="http://maps.google.com/?q=Borghild Ruds Vei 3, 1482 Nittedal">Borghild Ruds Vei 3</a>
+            <a href="http://maps.google.com/?q=Borghild Ruds Vei 3, 1482 Nittedal">1482 Nittedal</a>
+            <a href="tel:+47 67 05 90 90">Tel: 67 05 90 90</a>
+            <a href="mailto:info@csm.no">Email: info@csm.no</a>
+          </div>
         </div>
-      <h2>Sign up to our newsletter</h2>
-        <form method="POST">
-          <input type="text" name="first-name" placeholder="First Name">
-          <input type="text" name="last-name" placeholder="Last Name">
-          <input type="email" name="email" placeholder="Email">
-          <button type="submit" class="sign-up-button" aria-label="press to submit">Sign Up</button>
-        </form>
-      <h2>Find us also</h2>
-        <div class="social-media">
-          <a href="#"><img src="icons/twitter.png" alt="twitter" class="social-icons"></a>
-          <a href="#"><img src="icons/facebook.png" alt="facebook" class="social-icons"></a>
-          <a href="#"><img src="icons/instagram.png" alt="instagram" class="social-icons"></a>
-          <a href="#"><img src="icons/youtube.png" alt="youtube" class="social-icons"></a>
-          <a href="#"><img src="icons/linkedin.png" alt="linkedin" class="social-icons"></a>
+        <div>
+        <h2>Sign up to our newsletter</h2>
+          <form method="POST">
+            <input type="text" name="first-name" placeholder="First Name">
+            <input type="text" name="last-name" placeholder="Last Name">
+            <input type="email" name="email" placeholder="Email">
+            <button type="submit" class="sign-up-button" aria-label="press to submit">Sign Up</button>
+          </form>
+        </div>
+        <div>
+        <h2>Find us also</h2>
+          <div class="social-media">
+            <a href="#"><img src="icons/twitter.png" alt="twitter" class="social-icons"></a>
+            <a href="#"><img src="icons/facebook.png" alt="facebook" class="social-icons"></a>
+            <a href="#"><img src="icons/instagram.png" alt="instagram" class="social-icons"></a>
+            <a href="#"><img src="icons/youtube.png" alt="youtube" class="social-icons"></a>
+            <a href="#"><img src="icons/linkedin.png" alt="linkedin" class="social-icons"></a>
+          </div>
         </div>
     </footer>
 </body>
