@@ -414,7 +414,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   margin-left: 0px;
-  min-width: 900px;
+  min-width: 950px;
 }
 
 nav li {
