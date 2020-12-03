@@ -15,12 +15,15 @@ body {
 
 header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   background: var(--gray-nav);
   box-shadow: 0px 2px 10px #000000;
   position: fixed;
   top: 0px;
+}
+
+.header-desktop {
+  display: flex;
+  justify-content: space-between
 }
 
 footer {
@@ -28,10 +31,9 @@ footer {
 }
 
 .logo {
-  display: inline;
   width: 30%;
   min-width: 100px;
-  max-width: 150px;
+  max-width: 100px;
   margin: 5px 0px auto 10px;
 }
 
@@ -295,22 +297,29 @@ footer input {
 
 
 /* --------------------------- Desktop Styles --------------------------- */
-@media only screen and (min-width:901px) {
+@media only screen and (min-width:1050px) {
   /* No Show
   ------------------------------- */
 .ham {
   display: none;
 }
+/*------------------------------- */
+
 
 .logo {
-  width: 100%;
+  display: block;
+  margin: 10px auto;
 }
 
+.header-desktop {
+  width: 25%;
+  display: block;
+}
 
 /* -- Headers & Paragraphs 
 ------------------------------- */
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .h1-starter {
@@ -318,11 +327,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .location-info a{
@@ -365,48 +374,47 @@ p {
 
 /* -- Images & Map
 ------------------------------- */
+.landing-img {
+  width: 85%;
+  margin: 80px auto 10px auto;
+}
+
 .home-img {
-  width: 100%;
+  width: 90%;
 }
 
 
 /*  Navigation & Control Panel 
 ------------------------------- */
 nav {
+  width: 80%;
   position: absolute;
   top: 0px;
-  left: 150px;
-  min-width: 50%;
-  max-width: 100%;
-  display: inline;
+  right: 100px;
+  justify-content: end;
+  min-width: 70%;
+  margin: auto auto;
+  display: flex;
   animation: none;
   border: none;
   background: none;
 }
 
-/*
-
-*/
-
-
 nav ul {
   display: flex;
   flex-direction: row;
-  padding-left: 0px;
-  margin-left: 60px;
+  margin-left: 0px;
+  min-width: 600px;
+  max-width: 900px;
 }
 
 nav li {
-  font-size: 1rem;
-  font-weight: 450;
-  text-decoration: none;
   min-width: 100px;
-  display: flex;
   color: var(--brown);
 }
 
 nav a {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 450;
   text-decoration: none;
   display: flex;
@@ -414,13 +422,9 @@ nav a {
   color: var(--brown);
 }
 
-nav img {
-  width: 10%;
-  padding-right: 10px;
-}
+.search-form {
+  display: flex;
 
-.search-bar-form {
-  width: 30%;
 }
 
 .current {
@@ -428,6 +432,9 @@ nav img {
   border-bottom: 2px solid var(--orange);
 }
 
+
+/*  Exhibition
+-----------------------*/
 .img-up-row {
   display: flex;
   justify-content: space-evenly;

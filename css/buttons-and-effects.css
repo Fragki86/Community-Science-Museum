@@ -5,12 +5,16 @@
 
 .search-button{
     background-color: white;
-    color: var(--orange);
+    color: var(--brown);
     border-radius: 20px;
+    border: 1px solid var(--brown);
+    margin-left: 3px;
 }
 
 #search {
     border-radius: 15px;
+    border: 1px solid var(--brown);
+    height: 20px;
 }
 
 footer button {
