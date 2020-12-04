@@ -45,10 +45,12 @@ footer button:hover {
     padding: 5px 10px;
     margin: 20px auto;
     font-family: 'Nunito', sans-serif;
+    border: 1px solid var(--blue);
 }
 
 .read-more:hover {
     background-color: white;
     color: var(--blue);
     border: 1px solid var(--blue);
+    cursor: pointer;
 }

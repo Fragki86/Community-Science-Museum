@@ -68,16 +68,24 @@ h1 {
 h2 {
   font-family: 'Fredericka the Great', cursive;
   color: var(--blue);
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 10px auto 5px auto;
   text-align: center;
 }
 
-.h2-for-text-titles {
+.h3-for-text-titles {
   font-family: 'Nunito', sans-serif;
   color: var(--brown);
   text-decoration: underline;
   margin-top: 20px;
+}
+
+h3 {
+  font-family: 'Fredericka the Great', cursive;
+  color: var(--blue);
+  font-size: 1rem;
+  margin: 10px auto 5px auto;
+  text-align: center;
 }
 
 p {
@@ -86,6 +94,10 @@ p {
   font-size: 0.9rem;
   width: 80%;
   margin: 10px auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .location-info a{
@@ -310,7 +322,7 @@ footer input {
 
 
 /* --------------------------- Desktop Styles --------------------------- */
-@media only screen and (min-width:1050px) {
+@media only screen and (min-width:1250px) {
   /* No Show
   ------------------------------- */
 .ham {
@@ -341,7 +353,7 @@ h1 {
 }
 
 .h1-starter {
-  margin-top: 0px;
+  margin-top: 100px;
 }
 
 h2 {
@@ -349,19 +361,30 @@ h2 {
   margin-top: 30px;
 }
 
+h3 {
+  font-size: 1.2rem;
+}
+
+.h3-for-text-titles {
+  font-size: 1.1rem;
+  text-align: left;
+  width: 80%;
+}
+
 p {
   font-size: 1.1rem;
 }
 
 .location-info a{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .visit {
   display: grid;
   width: 80%;
+  margin: 0px auto;
   grid-template-columns: 50% 50%;
-  text-align: right;
+  text-align: center;
 }
 
 .p-visit {
@@ -391,6 +414,14 @@ p {
 }
 
 
+/* -- Hyperlink
+------------------------------- */
+.hyperlink {
+  display: block;
+  position: relative;
+  top: -80px;
+}
+
 /* -- Images & Map
 ------------------------------- */
 .landing-img {
@@ -415,15 +446,24 @@ p {
   grid-column: 2;
   grid-row: 1/8;
   margin: auto auto;
+  border: 1px solid var(--blue);
 }
 
 .img-explore-landing {
-  /*width: 800px;
-  height: 1213px;*/
-  min-width: 300px;;
+  min-width: 500px;;
   grid-column: 2;
-  grid-row: 2/8;
+  grid-row-start: 2;
+  grid-row-end: 12;
   width: 100%;
+  margin: 0px auto;
+}
+
+.img-events {
+  grid-column: 2;
+  grid-row: 1/6;
+  width: 100%;
+  margin: 20px auto;
+  min-width: 600px;
 }
 
 /*  Navigation & Control Panel 
@@ -446,13 +486,13 @@ nav {
 nav ul {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   position: relative;
   margin-left: 50px;
   min-width: 950px;
 }
 
 nav li {
-  min-width: 65px;
   height: 4.5vh;
 }
 
@@ -526,7 +566,7 @@ footer {
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 1fr;
-  margin: 100px auto 40px auto;
+  margin: 0px auto 40px auto;
 }
 
 .explore-grid > p {
@@ -536,5 +576,23 @@ footer {
 
 .explore-grid > h1 {
   grid-column: 1;
+}
+
+/*  Events
+-----------------------*/
+.special-arrangements-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.special-arrangements-grid p {
+  margin-left: 0px;
+}
+
+.special-arrangements-grid h3 {
+  margin-left: 0px;
 }
 }
