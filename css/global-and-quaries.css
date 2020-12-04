@@ -346,6 +346,9 @@ footer input {
   display: block;
 }
 
+.separator {
+  min-height: 350px;
+}
 /* -- Headers & Paragraphs 
 ------------------------------- */
 h1 {
@@ -417,7 +420,7 @@ p {
 /* -- Hyperlink
 ------------------------------- */
 .hyperlink {
-  display: block;
+  padding-top: 50px;
 }
 
 /* -- Images & Map
@@ -432,23 +435,25 @@ p {
 }
 
 .img-exhibitions-landing {
-  width: 85%;
-  grid-row: 1/6;
+  width: 100%;
+  grid-row: 2/7;
   grid-column: 2;
   min-width: 360px;
+  max-width: 400px;
+  margin: auto auto;
 }
 
 .img-exhibition-groups {
   width: 90%;
-  min-width: 300px;;
+  min-width: 400px;
   grid-column: 2;
-  grid-row: 1/8;
+  grid-row: 1/6;
   margin: auto auto;
-  border: 1px solid var(--blue);
+  border: 1px solid var(--brown);
 }
 
 .img-explore-landing {
-  min-width: 500px;;
+  min-width: 500px;
   grid-column: 2;
   grid-row-start: 2;
   grid-row-end: 12;
@@ -460,7 +465,7 @@ p {
   grid-column: 2;
   grid-row: 1/6;
   width: 100%;
-  margin: 20px auto;
+  margin: auto auto;
   min-width: 600px;
 }
 
@@ -473,8 +478,7 @@ p {
 nav {
   width: 50%;
   top: -75px;
-  right: -42%;
-  margin: auto auto;
+  right: -45%;
   display: flex;
   animation: none;
   border: none;
@@ -484,15 +488,17 @@ nav {
 nav ul {
   display: flex;
   flex-direction: row;
-  position: absolute;
-  right: -900px;
+  /*
+  position: fixed;
+  right: 150px;
+  */
   margin-left: 0px;
-  min-width: 500px;
+  min-width: 940px;
 }
 
 nav li {
   height: 4.5vh;
-  margin-right: -80px;
+  margin-right: -100px;
 }
 
 nav a {
@@ -551,10 +557,15 @@ footer {
 
 .exhibition-groups {
   width: 80%;
+  min-width: 100px;
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: 1fr;
-  margin: auto auto;
+  margin: 12px auto;
+}
+
+.exhibition-groups > p {
+  grid-column: 1;
 }
 
 /*  Explore
