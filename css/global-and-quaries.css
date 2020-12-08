@@ -332,15 +332,35 @@ footer input {
 }
 
 /* --------------------------- Medium Screen and Desktop Styles --------------------------- */
-@media only screen and (min-width:950px) {
+@media only screen and (min-width:1024px) {
   /* No Show
-  ------------------------------- */
+  ------------------------------- 
   .logo-desktop {
     display: none;
-  }
+  }*/
+  /* No Show
+  ------------------------------- */
+.ham {
+  display: none;
+}
+.logo {
+  display: none;
+}
+/*------------------------------- */
   /*------------------------------- */
   
-
+  .logo-desktop {
+    width: 35%;
+    width: 130px;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .header-desktop {
+    width: 20%;
+    display: block;
+  }
+  
 
   
   .separator {
@@ -422,6 +442,58 @@ footer input {
   .hours p {
     margin-left: 0px;
   }
+  
+
+/*  Navigation & Control Panel 
+------------------------------- */
+#nav-bar {
+  position: relative;
+}
+
+nav {
+  width: 80%;
+  top: -75px;
+  right: -45%;
+  display: flex;
+  animation: none;
+  border: none;
+  background: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  min-width: 940px;
+}
+
+nav li {
+  height: 4.5vh;
+  margin-right: -110px;
+  width: 0%;
+  
+}
+
+nav a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: flex;
+  color: var(--brown);
+}
+
+nav img {
+  padding-right: 10px;
+}
+
+.search-form {
+  display: flex;
+}
+
+.current {
+  text-decoration: none;
+  border-bottom: 2px solid var(--orange);
+}
+
   
   
   /* -- Images & Map
@@ -561,7 +633,7 @@ footer input {
 
 
 /* --------------------------- Desktop Styles --------------------------- */
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width:1250px) {
   /* No Show
   ------------------------------- */
 .ham {
@@ -660,6 +732,7 @@ nav ul {
 nav li {
   height: 4.5vh;
   margin-right: -100px;
+  width: 50%;
 }
 
 nav a {
@@ -667,6 +740,10 @@ nav a {
   text-decoration: none;
   display: flex;
   color: var(--brown);
+}
+
+nav img {
+  padding-right: 15px;
 }
 
 .search-form {
