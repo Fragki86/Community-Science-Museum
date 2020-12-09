@@ -484,8 +484,19 @@ nav ul {
 nav li {
   height: 4.5vh;
   margin-right: -90px;
-  width: 0%;
-  
+  width: 0%;  
+}
+
+.li-adjust-explore {
+  margin-left: 10px;
+}
+
+.li-adjust-events {
+  margin-left: -15px;
+}
+
+.li-adjust-visit {
+  margin-left: -20px;
 }
 
 nav a {
@@ -503,9 +514,14 @@ nav img {
   display: flex;
 }
 
+.search-bar-form-desktop {
+  padding-left: 0px;
+}
+
 .current {
   text-decoration: none;
   border-bottom: 2px solid var(--orange);
+  font-weight: 600;
 }
 
   
