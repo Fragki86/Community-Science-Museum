@@ -84,11 +84,22 @@ h2 {
   text-align: center;
 }
 
+.h2-exhibition-sections {
+  font-family: 'Nunito', sans-serif;
+  color: var(--brown);
+  text-decoration: underline;
+  margin-top: 20px;
+  width: 80%;
+  text-align: left;
+
+}
+
 .h3-for-text-titles {
   font-family: 'Nunito', sans-serif;
   color: var(--brown);
   text-decoration: underline;
   margin-top: 20px;
+  width: 80%;
 }
 
 h3 {
@@ -96,7 +107,7 @@ h3 {
   color: var(--blue);
   font-size: 1rem;
   margin: 10px auto 5px auto;
-  text-align: center;
+  text-align: left;
 }
 
 p {
@@ -374,7 +385,7 @@ footer input {
   }
   
   .h1-starter {
-    margin-top: 65px;
+    margin-top: 100px;
     border-bottom: 2px solid var(--orange);
     width: 40%
   }
@@ -388,17 +399,20 @@ footer input {
   h2 {
     font-size: 1.5rem;
     margin-top: 30px;
-    
+  }
+
+  .h2-exhibition-sections {
+    width: 90%;
   }
   
   h3 {
     font-size: 1.2rem;
   }
-  
+
   .h3-for-text-titles {
     font-size: 1.1rem;
     text-align: left;
-    width: 80%;
+   
   }
   
   p {
@@ -464,12 +478,12 @@ nav ul {
   display: flex;
   flex-direction: row;
   margin-left: 100px;
-  min-width: 940px;
+  min-width: 800px;
 }
 
 nav li {
   height: 4.5vh;
-  margin-right: -110px;
+  margin-right: -90px;
   width: 0%;
   
 }
@@ -608,6 +622,10 @@ nav img {
   
   .explore-grid > h1 {
     grid-column: 1;
+  }
+
+  .explore-grid > h3 {
+    width: 90%;
   }
   
   /*  Events
