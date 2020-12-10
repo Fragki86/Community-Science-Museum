@@ -297,7 +297,7 @@ nav img {
 ------------------------------- */
 footer h2{
   font-family: 'Nunito', sans-serif;
-  color: var(--gray-nav);
+  color: white;
   text-decoration: underline;
   font-size: 0.8rem;
   margin-top: 15px;
@@ -307,7 +307,7 @@ footer h2{
 footer a {
   font-family: 'Nunito', sans-serif;
   font-size: 0.7rem;
-  color: var(--gray-nav);
+  color: white;
   margin: 0px auto;
   text-align: center;
   text-decoration: none;
