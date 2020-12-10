@@ -342,6 +342,10 @@ footer input {
   align-items: center;
 }
 
+label {
+  display: none;
+}
+
 /* --------------------------- Medium Screen and Desktop Styles --------------------------- */
 @media only screen and (min-width:1024px) {
   /* No Show

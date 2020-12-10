@@ -22,8 +22,8 @@
     <header>
       <div class="header-desktop">
         <a href="index.html">
-          <img src="icons/logo.png" class="logo">
-          <img src="icons/logo-big.png" class="logo-desktop">
+          <img src="icons/logo.png" class="logo" alt="The museum's logo is an atom">
+          <img src="icons/logo-big.png" class="logo-desktop" alt="The museum's logo is an atom">
         </a>
         <section id="nav-bar">
           <input type="checkbox" id="hamburger-menu" />
@@ -98,9 +98,12 @@
         <div>
         <h2>Sign up to our newsletter</h2>
           <form method="POST">
-            <input type="text" name="first-name" placeholder="First Name">
-            <input type="text" name="last-name" placeholder="Last Name">
-            <input type="email" name="email" placeholder="Email">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="First Name">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
             <button type="submit" class="sign-up-button" aria-label="press to submit">Sign Up</button>
           </form>
         </div>
