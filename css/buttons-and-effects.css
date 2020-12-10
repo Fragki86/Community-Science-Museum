@@ -29,6 +29,7 @@ footer button {
     padding: 5px;
     font-family: 'Nunito', sans-serif;
     font-size: 0.8rem;
+    cursor: pointer;
 }
 
 footer button:hover {
