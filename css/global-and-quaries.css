@@ -71,7 +71,8 @@ h1 {
 
 .h1-starter-exhibitions {
   margin-top: 70px;
-  width: 35%
+  width: 35%;
+  text-decoration: underline var(--orange);
 }
 
 h2 {

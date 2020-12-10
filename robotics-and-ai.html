@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Robotics and AI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robotics and AI section of the museum, describing briefly the exhibition and activities"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+      <div class="header-desktop">
+        <a href="index.html">
+          <img src="icons/logo.png" class="logo">
+          <img src="icons/logo-big.png" class="logo-desktop">
+        </a>
+        <section id="nav-bar">
+          <input type="checkbox" id="hamburger-menu" />
+          <label for="hamburger-menu" class="ham">
+            <i class="fas fa-bars"></i>
+          </label>
+          <nav id="nav">
+            <div class="nav-desktop">
+            <ul>
+              <li><img src="icons/museum.png" alt="icon of a museum"><a href="index.html">Museum</a></li>
+              <li><img src="icons/exhibition.png" alt="icon of an exhibition"><a href="exhibitions.html" class="current">Exhibitions</a></li>
+              <li class="li-adjust-explore"><img src="icons/explore.png" alt="icon of test tubes"><a href="explore.html">Explore</a></li>
+              <li class="li-adjust-events"><img src="icons/events.png" alt="icon of a party hat"><a href="special-events.html">Events</a></li>
+              <li class="li-adjust-visit"><img src="icons/visit.png" alt="icon of a bus"><a href="visit.html">Visit</a></li>
+              <li class="search-bar-form-desktop"><form method="POST" action="search-results.html" class="search-form">
+                <a href="search-results.html">
+                <input type="search" name="search" id="search" placeholder=" Search" aria-label="search-form">
+                </a>
+                <button type="submit" class="search-button" aria-label="press to search"><i class="fas fa-search"></i></button>
+              </form></li>
+            </ul>
+            </div>
+          </nav>
+        </section>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <h1 class="h1-starter">Robotics and AI</h1>
+      <div class="explore-grid">
+        <h2 class="h2-exhibition-sections">Robotics</h2>
+            <p>Experience and discover one of the top future sciences. Rob the Robot will guide you around this section
+               of the museum and will show you the evolution of robotics during the years. You can even interact with
+               it and ask him questions about the section and his functions. You will be surprised of what this very kind 
+               robot of ours is capable of knowing and answering.                
+            </p>
+            <p>Rob will show you how pieces of 'scrap-metal' are created to operative programmed objects and how
+               the scientists are making them functionable.                 
+            </p>
+            <p>Robots, of course, are not only to have fun with. Discover the impact they have on industry and medicine,
+               as well as the dangers that are hiding underneath this science.
+            </p>
+        <h2 class="h2-exhibition-sections">Artificial Intelligence</h2>
+            <p>Without the artificial intelligence, robots would almost not exist. AI is a very interesting and funny science. 
+               Discover and interact with a variety of home appliances and software applications that will be very useful in
+               the upcoming future.               
+            </p>
+            <p>Participating in creative programming activities in which you will be shown how to build games, program robots,
+               and train your own AI models.                                           
+            </p>
+            <p>In this section of the museum you are going to cultivate curiosity and grit, and we have made this exhibition
+               very clear for the children to understand the fundamental of AI.                
+            </p>
+            <p>This is happening by having an interactive dialog with our AI build-in system, that the children can ask and 
+               get answers and examples. They will experience as well how the machine are learning new things and why and
+               how people came with the ideas of creating AI.
+            </p>
+        <img src="images/robot-hand.jpg" class="img-explore-landing" alt="A bionic arm under blue light">
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div>
+        <h2>Community Science Museum</h2>
+          <div class="basic-info">
+            <a href="http://maps.google.com/?q=Borghild Ruds Vei 3, 1482 Nittedal">Borghild Ruds Vei 3</a>
+            <a href="http://maps.google.com/?q=Borghild Ruds Vei 3, 1482 Nittedal">1482 Nittedal</a>
+            <a href="tel:+47 67 05 90 90">Tel: 67 05 90 90</a>
+            <a href="mailto:info@csm.no">Email: info@csm.no</a>
+          </div>
+        </div>
+        <div>
+        <h2>Sign up to our newsletter</h2>
+          <form method="POST">
+            <input type="text" name="first-name" placeholder="First Name">
+            <input type="text" name="last-name" placeholder="Last Name">
+            <input type="email" name="email" placeholder="Email">
+            <button type="submit" class="sign-up-button" aria-label="press to submit">Sign Up</button>
+          </form>
+        </div>
+        <div>
+        <h2>Find us also</h2>
+          <div class="social-media">
+            <a href="#"><img src="icons/twitter.png" alt="twitter" class="social-icons"></a>
+            <a href="#"><img src="icons/facebook.png" alt="facebook" class="social-icons"></a>
+            <a href="#"><img src="icons/instagram.png" alt="instagram" class="social-icons"></a>
+            <a href="#"><img src="icons/youtube.png" alt="youtube" class="social-icons"></a>
+            <a href="#"><img src="icons/linkedin.png" alt="linkedin" class="social-icons"></a>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
