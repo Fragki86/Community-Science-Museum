@@ -54,6 +54,8 @@ footer {
 .hyperlink {
   padding-top: 50px;
 }
+
+
 /* -- Headers & Paragraphs 
 ------------------------------- */
 h1 {
@@ -348,109 +350,111 @@ label {
 
 /* --------------------------- Medium Screen and Desktop Styles --------------------------- */
 @media only screen and (min-width:1024px) {
-  /* No Show
-  ------------------------------- */
-  .ham {
-    display: none;
-  }
-  .logo {
-    display: none;
-  }
-  /*------------------------------- */
+/* No Show
+------------------------------- */
+.ham {
+display: none;
+}
+.logo {
+  display: none;
+}
+/*------------------------------- */
   
     
-    .logo-desktop {
-      width: 35%;
-      width: 130px;
-      display: block;
-      margin: 10px auto;
-    }
-    
-    .header-desktop {
-      width: 20%;
-      display: block;
-    }
+.logo-desktop {
+  width: 35%;
+  width: 130px;
+  display: block;
+  margin: 10px auto;
+}
 
-    #nav-bar {
-      position: relative;
-    }
-    
-    nav {
-      width: 80%;
-      top: -75px;
-      right: -45%;
-      display: flex;
-      animation: none;
-      border: none;
-      background: none;
-    }
-    
-    nav ul {
-      display: flex;
-      flex-direction: row;
-      margin-left: 100px;
-      min-width: 800px;
-    }
-    
-    nav li {
-      height: 4.5vh;
-      margin-right: -90px;
-      width: 0%;  
-    }
-    
-    .li-adjust-exhibitions {
-      margin-left: -15px;
-    }
+.header-desktop {
+  width: 20%;
+  display: block;
+}
 
-    .li-adjust-explore {
-      margin-left: -5px;
-    }
+#nav-bar {
+  position: relative;
+}
     
-    .li-adjust-events {
-      margin-left: -25px;
-    }
+nav {
+  width: 80%;
+  top: -75px;
+  right: -45%;
+  display: flex;
+  animation: none;
+  border: none;
+  background: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  min-width: 800px;
+}
+
+nav li {
+  height: 4.5vh;
+  margin-right: -90px;
+  width: 0%;  
+}
+
+.li-adjust-exhibitions {
+  margin-left: -15px;
+}
+
+.li-adjust-explore {
+  margin-left: -5px;
+}
+
+.li-adjust-events {
+  margin-left: -25px;
+}
+
+.li-adjust-visit {
+  margin-left: -25px;
+}
+
+nav a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: flex;
+  color: var(--brown);
+}
+
+nav img {
+  padding-right: 10px;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-bar-form-desktop {
+  margin-left: -20px;
+}
     
-    .li-adjust-visit {
-      margin-left: -25px;
-    }
-    
-    nav a {
-      font-size: 0.9rem;
-      text-decoration: none;
-      display: flex;
-      color: var(--brown);
-    }
-    
-    nav img {
-      padding-right: 10px;
-    }
-    
-    .search-form {
-      display: flex;
-    }
-    
-    .search-bar-form-desktop {
-      margin-left: -20px;
-    }
-    
-    .current {
-      text-decoration: none;
-      border-bottom: 2px solid var(--orange);
-      font-weight: 600;
-    }
+.current {
+  text-decoration: none;
+  border-bottom: 2px solid var(--orange);
+  font-weight: 600;
+}
     
 
 /* -- Headers & Paragraphs 
-  ------------------------------- */
-  .h1-starter {
-    margin-top: 90px;
-  }
-  
-  .h1-starter-exhibitions {
-    margin-top: 90px;
-  }
+------------------------------- */
+.h1-starter {
+  margin-top: 90px;
+}
+
+.h1-starter-exhibitions {
+  margin-top: 90px;
+}
 
 }
+
+
 
 
 /* --------------------------- Medium Screen and Desktop Styles --------------------------- */
@@ -464,98 +468,97 @@ label {
   display: none;
 }
 /*------------------------------- */
-  /*------------------------------- */
-  
-  .logo-desktop {
-    width: 35%;
-    width: 130px;
-    display: block;
-    margin: 10px auto;
-  }
-  
-  .header-desktop {
-    width: 20%;
-    display: block;
-  }
-  
-  .separator {
-    min-height: 350px;
-  }
 
-  /* -- Headers & Paragraphs 
-  ------------------------------- */
-  h1 {
-    font-size: 1.7rem;
-  }
-  
-  .h1-starter {
-    margin-top: 100px;
-  }
-  
-  .h1-starter-exhibitions {
-    margin-top: 0px;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-    margin-top: 30px;
-  }
+.logo-desktop {
+  width: 35%;
+  width: 130px;
+  display: block;
+  margin: 10px auto;
+}
 
-  .h2-exhibition-sections {
-    width: 90%;
-  }
-  
-  h3 {
-    font-size: 1.2rem;
-  }
+.header-desktop {
+  width: 20%;
+  display: block;
+}
 
-  .h3-for-text-titles {
-    font-size: 1.1rem;
-    text-align: left;
-   
-  }
+.separator {
+  min-height: 350px;
+}
+
+
+/* -- Headers & Paragraphs 
+------------------------------- */
+h1 {
+  font-size: 1.7rem;
+}
   
-  p {
-    font-size: 1.1rem;
-  }
+.h1-starter {
+  margin-top: 100px;
+}
+
+.h1-starter-exhibitions {
+  margin-top: 0px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+.h2-exhibition-sections {
+  width: 90%;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.h3-for-text-titles {
+  font-size: 1.1rem;
+  text-align: left;
+ 
+}
+
+p {
+  font-size: 1.1rem;
+}
   
-  .location-info a{
-    font-size: 1.1rem;
-  }
-  
-  .visit {
-    display: grid;
-    width: 80%;
-    margin: 0px auto;
-    grid-template-columns: 50% 50%;
-    text-align: center;
-  }
-  
-  .p-visit {
-    width: 70%;
-  }
-  
-  .opening-hours {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-  }
-  
-  .days {
-    text-align: right;
-  }
-  
-  .days p {
-    margin-right: 5px;
-  }
-  
-  .hours {
-    text-emphasis: left;
-  }
-  
-  .hours p {
-    margin-left: 0px;
-  }
+.location-info a{
+  font-size: 1.1rem;
+}
+
+.visit {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+
+.p-visit {
+  width: 70%;
+}
+
+.opening-hours {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+}
+
+.days {
+  text-align: right;
+}
+
+.days p {
+  margin-right: 5px;
+}
+
+.hours {
+  text-emphasis: left;
+}
+
+.hours p {
+  margin-left: 0px;
+}
   
 
 /*  Navigation & Control Panel 
@@ -631,142 +634,139 @@ nav img {
 
   
   
-  /* -- Images & Map
-  ------------------------------- */
-  .landing-img {
-    width: 100%;
-    margin: 65px auto 10px auto;
-  }
-  
-  .home-img {
-    width: 90%;
-  }
-  
-  .img-exhibitions-landing {
-    width: 100%;
-    grid-row: 2/7;
-    grid-column: 2;
-    min-width: 350px;
-    margin: auto auto;
-  }
-  
-  .img-exhibition-groups {
-    width: 80%;
-    min-width: 310px;
-    grid-column: 2;
-    grid-row: 1/6;
-    margin: auto auto;
-    border: 1px solid var(--brown);
-  }
-  
-  .img-explore-landing {
-    min-width: 400px;
-    grid-column: 2;
-    grid-row-start: 2;
-    grid-row-end: 12;
-    width: 100%;
-    margin: 15px auto;
-  }
-  
-  .img-events {
-    grid-column: 2;
-    grid-row: 1/6;
-    width: 100%;
-    margin: auto auto;
-    min-width: 500px;
-  } 
-  
-  
-  /*  Exhibition Images on Home Page
-  -----------------------*/
-  .img-up-row {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .img-bottom-row {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  
-  /*  Footer
-  -----------------------*/
-  footer {
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 50px;
-    margin-top: 60px;
-    padding-left: 75px;
-  }
+/* -- Images & Map
+------------------------------- */
+.landing-img {
+  display: block;
+  width: 100%;
+  margin-top: 90px;
+}
 
-  /*  Exhibitions
-  -----------------------*/
-  .exhibitions-beginning {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 1fr;
-    margin: 100px auto 40px auto;
-  }
-  
-  .exhibitions-beginning > p {
-    grid-column: 1;
-  }
-  
-  .exhibition-groups {
-    width: 80%;
-    min-width: 100px;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 1fr;
-    margin: 12px auto;
-  }
-  
-  .exhibition-groups > p {
-    grid-column: 1;
-  }
-  
-  /*  Explore
-  -----------------------*/
-  .explore-grid {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 1fr;
-    margin: 0px auto 40px auto;
-  }
-  
-  .explore-grid > p {
-    grid-column: 1;
-    width: 90%;
-  }
-  
-  .explore-grid > h1 {
-    grid-column: 1;
-  }
+.img-exhibitions-landing {
+  width: 100%;
+  grid-row: 2/7;
+  grid-column: 2;
+  min-width: 350px;
+  margin: auto auto;
+}
 
-  .explore-grid > h3 {
-    width: 90%;
-  }
-  
-  /*  Events
-  -----------------------*/
-  .special-arrangements-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-    width: 80%;
-    margin: 0px auto;
-  }
-  
-  .special-arrangements-grid p {
-    margin-left: 0px;
-  }
-  
-  .special-arrangements-grid h3 {
-    margin-left: 0px;
-  }
+.img-exhibition-groups {
+  width: 80%;
+  min-width: 310px;
+  grid-column: 2;
+  grid-row: 1/6;
+  margin: auto auto;
+  border: 1px solid var(--brown);
+}
+
+.img-explore-landing {
+  min-width: 400px;
+  grid-column: 2;
+  grid-row-start: 2;
+  grid-row-end: 12;
+  width: 100%;
+  margin: 15px auto;
+}
+
+.img-events {
+  grid-column: 2;
+  grid-row: 1/6;
+  width: 100%;
+  margin: auto auto;
+  min-width: 500px;
+} 
+
+
+/*  Exhibition Images on Home Page
+-----------------------*/
+.img-up-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img-bottom-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/*  Footer
+-----------------------*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+  margin-top: 60px;
+  padding-left: 75px;
+}
+
+
+/*  Exhibitions
+-----------------------*/
+.exhibitions-beginning {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  margin: 100px auto 40px auto;
+}
+
+.exhibitions-beginning > p {
+  grid-column: 1;
+}
+
+.exhibition-groups {
+  width: 80%;
+  min-width: 100px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  margin: 12px auto;
+}
+
+.exhibition-groups > p {
+  grid-column: 1;
+}
+
+/*  Explore
+-----------------------*/
+.explore-grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  margin: 0px auto 40px auto;
+}
+
+.explore-grid > p {
+  grid-column: 1;
+  width: 90%;
+}
+
+.explore-grid > h1 {
+  grid-column: 1;
+}
+.explore-grid > h3 {
+  width: 90%;
+}
+
+/*  Events
+-----------------------*/
+.special-arrangements-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.special-arrangements-grid p {
+  margin-left: 0px;
+}
+
+.special-arrangements-grid h3 {
+  margin-left: 0px;
+}
 
 
 }
