@@ -349,10 +349,102 @@ label {
 /* --------------------------- Medium Screen and Desktop Styles --------------------------- */
 @media only screen and (min-width:1024px) {
   /* No Show
-  ------------------------------- 
-  .logo-desktop {
+  ------------------------------- */
+  .ham {
     display: none;
-  }*/
+  }
+  .logo {
+    display: none;
+  }
+  /*------------------------------- */
+  
+    
+    .logo-desktop {
+      width: 35%;
+      width: 130px;
+      display: block;
+      margin: 10px auto;
+    }
+    
+    .header-desktop {
+      width: 20%;
+      display: block;
+    }
+
+    #nav-bar {
+      position: relative;
+    }
+    
+    nav {
+      width: 80%;
+      top: -75px;
+      right: -45%;
+      display: flex;
+      animation: none;
+      border: none;
+      background: none;
+    }
+    
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      margin-left: 100px;
+      min-width: 800px;
+    }
+    
+    nav li {
+      height: 4.5vh;
+      margin-right: -90px;
+      width: 0%;  
+    }
+    
+    .li-adjust-exhibitions {
+      margin-left: -15px;
+    }
+
+    .li-adjust-explore {
+      margin-left: -5px;
+    }
+    
+    .li-adjust-events {
+      margin-left: -25px;
+    }
+    
+    .li-adjust-visit {
+      margin-left: -25px;
+    }
+    
+    nav a {
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: flex;
+      color: var(--brown);
+    }
+    
+    nav img {
+      padding-right: 10px;
+    }
+    
+    .search-form {
+      display: flex;
+    }
+    
+    .search-bar-form-desktop {
+      margin-left: -20px;
+    }
+    
+    .current {
+      text-decoration: none;
+      border-bottom: 2px solid var(--orange);
+      font-weight: 600;
+    }
+    
+
+}
+
+
+/* --------------------------- Medium Screen and Desktop Styles --------------------------- */
+@media only screen and (min-width:1124px) {
   /* No Show
   ------------------------------- */
 .ham {
@@ -375,8 +467,6 @@ label {
     width: 20%;
     display: block;
   }
-  
-
   
   .separator {
     min-height: 350px;
@@ -487,6 +577,10 @@ nav li {
   width: 0%;  
 }
 
+.li-adjust-exhibitions {
+  margin-left: 0px;
+}
+
 .li-adjust-explore {
   margin-left: 10px;
 }
@@ -516,6 +610,7 @@ nav img {
 
 .search-bar-form-desktop {
   padding-left: 0px;
+  margin-left: 0px;
 }
 
 .current {
