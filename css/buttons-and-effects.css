@@ -47,6 +47,9 @@ footer button:hover {
     margin: 20px auto;
     font-family: 'Nunito', sans-serif;
     border: 1px solid var(--blue);
+    text-align: center;
+    width: 80px;
+
 }
 
 .read-more:hover {

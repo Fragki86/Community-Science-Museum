@@ -8,7 +8,7 @@
   --brown: #836c40;
   --light-brown: #F8ECDF;
 }
-ede9e5
+
 /* -- No show
 --------------------*/
 .logo-desktop {
@@ -439,6 +439,16 @@ label {
       font-weight: 600;
     }
     
+
+/* -- Headers & Paragraphs 
+  ------------------------------- */
+  .h1-starter {
+    margin-top: 90px;
+  }
+  
+  .h1-starter-exhibitions {
+    margin-top: 90px;
+  }
 
 }
 
