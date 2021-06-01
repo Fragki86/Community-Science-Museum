@@ -36,6 +36,7 @@ function exhibitions(resultsPosts) {
         }
 
         exhContainer.innerHTML += `
+        <div class="hyperlink">
         <div class=${className}>
             <div class="exhibition-groups">
                 <h2>${resultsPosts[i].title.rendered}</h2>
@@ -43,7 +44,7 @@ function exhibitions(resultsPosts) {
                 ${resultsPosts[i].excerpt.rendered}
                 <a href="exhibitions-details.html?id=${resultsPosts[i].id}" class="read-more">Read More</a>
             </div>
-
+        </div>
         </div>
         `
     }

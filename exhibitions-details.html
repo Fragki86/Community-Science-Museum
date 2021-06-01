@@ -26,24 +26,27 @@
             <img src="icons/logo-big.png" class="logo-desktop" alt="The museum's logo is an atom">
         </a>
         <section id="nav-bar">
-          <input type="checkbox" id="hamburger-menu" />
           <label for="hamburger-menu" class="ham">
             <i class="fas fa-bars"></i>
           </label>
-          <nav id="nav">
+          <nav id="nav" class="nav-m">
             <div class="nav-desktop">
             <ul>
               <li><img src="icons/museum.png" alt="icon of a museum"><a href="index.html">Museum</a></li>
-              <li><img src="icons/exhibition.png" alt="icon of an exhibition"><a href="exhibitions.html" class="current">Exhibitions</a></li>
+              <li class="li-adjust-exhibitions"><img src="icons/exhibition.png" alt="icon of an exhibition"><a href="exhibitions-list.html" class="current">Exhibitions</a></li>
               <li class="li-adjust-explore"><img src="icons/explore.png" alt="icon of test tubes"><a href="explore.html">Explore</a></li>
               <li class="li-adjust-events"><img src="icons/events.png" alt="icon of a party hat"><a href="special-events.html">Events</a></li>
               <li class="li-adjust-visit"><img src="icons/visit.png" alt="icon of a bus"><a href="visit.html">Visit</a></li>
-              <li class="search-bar-form-desktop"><form method="POST" action="#" class="search-form">
+              <li class="search-bar-form-desktop"><form method="POST" action="visit.html" class="search-form">
                 <label for="search"></label>
                 <input type="search" name="search" id="search" placeholder=" Search" aria-label="search-form">
-                <button type="submit" class="search-button" aria-label="press to search"><i class="fas fa-search"></i></button>
+                <a href="search.html"><button type="button" class="search-button" aria-label="press to search"><i class="fas fa-search"></i></button></a>
               </form></li>
             </ul>
+            <div class="search-div">
+              <ul class="search-results">
+              </ul>
+            </div>
             </div>
           </nav>
         </section>
@@ -54,30 +57,6 @@
         <div class="details-container">
 
         </div>
-      <!-- <h1 class="h1-starter">Ecology</h1>
-      <div class="explore-grid">
-        <h2 class="h2-exhibition-sections">Sustainability</h2>
-            <p>Find out simple ways that people can live sustainably with. Discover how the scientists around the world
-               are exploring all these ways to make Earth a clean and pure place to live. You will be surprised how all these
-               methods are affecting positively everything that you can see around you.
-            </p>
-        <h2 class="h2-exhibition-sections">Ecological disasters and dangers</h2>
-            <p>During the latest years, there have been huge environmental disasters around the world, either by accident
-               or by lacking of knowledge. Many of these disasters could be prevented if people were more aware about
-               the consequences of their actions. 
-            </p>
-            <p>During this section's path, you will go through many of these disasters and see how and with what measures
-               they could be avoided and you will be amazed on how simple the solutions are.
-            </p>
-            <p>Discover how the dangers that we are facing in future can affect the life on the planet. Navigate through 
-               our interactive map to see how global warming is affecting every place on earth and which species are
-               endangered because of that. 
-            </p>
-            <p>You can as well check the pollution levels of the biggest industrial cities of the world and how this is
-               affecting the state of living in those cities.
-            </p>
-        <img src="images/ecology-mountains.jpg" class="img-explore-landing" alt="Lake view with high snowy mountains on the background, in Canada">
-      </div> -->
     </main>
     <!-- Footer -->
     <footer>
@@ -105,14 +84,16 @@
         <div>
         <h2>Find us also</h2>
           <div class="social-media">
-            <a href="#"><img src="icons/twitter.png" alt="twitter" class="social-icons"></a>
-            <a href="#"><img src="icons/facebook.png" alt="facebook" class="social-icons"></a>
-            <a href="#"><img src="icons/instagram.png" alt="instagram" class="social-icons"></a>
-            <a href="#"><img src="icons/youtube.png" alt="youtube" class="social-icons"></a>
-            <a href="#"><img src="icons/linkedin.png" alt="linkedin" class="social-icons"></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter" alt="twitter icon" id="twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook" alt="facebook icon" id="facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram" alt="instagram icon" id="instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube" alt="youtube icon" id="youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in" alt="linkedin icon" id="linked-in"></i></a>
           </div>
         </div>
     </footer>
     <script src="js/details.js"></script>
+    <script src="js/nav-mobile.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>

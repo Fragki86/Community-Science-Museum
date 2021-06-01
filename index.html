@@ -26,7 +26,6 @@
           <img src="icons/logo-big.png" class="logo-desktop" alt="The museum's logo is an atom">
         </a>
         <section id="nav-bar">
-          <input type="checkbox" id="hamburger-menu" />
           <label for="hamburger-menu" class="ham">
             <i class="fas fa-bars"></i>
           </label>
@@ -44,11 +43,12 @@
                 <a href="search.html"><button type="button" class="search-button" aria-label="press to search"><i class="fas fa-search"></i></button></a>
               </form></li>
             </ul>
+            <div class="search-div">
+              <ul class="search-results">
+              </ul>
+            </div>
             </div>
           </nav>
-          <div class="search-results">
-            
-          </div>
         </section>
       </div>
     </header>
@@ -69,48 +69,9 @@
           to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home). 
         </p>
       <div class="separator">
-        <a href="exhibitions.html"><h2>Exhibitions</h2></a>
+        <a href="exhibitions-list.html"><h2>Exhibitions</h2></a>
           <div class="exhibitions-desktop">
-            <div class="img-up-row">
-              <div>
-                <a href="exhibitions.html#cosmology">
-                <h3>Cosmology</h3>
-                <img src="images/cosmonaut.jpg" alt="an astronaut in sitting in a shuttle" class="home-img">
-                </a>
-              </div>
-              <div>
-                <a href="exhibitions.html#evolution">
-                <h3>Evolution</h3>
-                <img src="images/evolution.jpg" alt="evolution of human sceleton" class="home-img">
-              </a>
-              </div>
-              <div>
-                <a href="exhibitions.html#biology-and-medicine">
-                <h3>Biology and Medicine</h3>
-                <img src="images/biology-medicine.jpg" alt="a child is looking though microscope" class="home-img">
-                </a>
-              </div>
-            </div>
-            <div class="img-bottom-row">
-              <div>
-                <a href="exhibitions.html#ecology">
-                <h3>Ecology</h3>
-                <img src="images/ecology.jpg" alt="sunlight through a forrest" class="home-img">
-                </a>
-              </div>
-              <div>
-                <a href="exhibitions.html#robotics-and-ai">
-                <h3>Robotics and AI</h3>
-                <img src="images/ai.jpg" alt="a child with AI googles" class="home-img">
-                </a>
-              </div>
-              <div>
-                <a href="exhibitions.html#renewable-energy">
-                <h3>Renewable Energy</h3>
-                <img src="images/renewable.jpg" alt="a wind turbin out in the open" class="home-img">
-                </a>
-              </div>
-            </div>
+
           </div>
       </div>
       <h2>Get Involved</h2>
@@ -157,13 +118,16 @@
       <div>
       <h2>Find us also</h2>
         <div class="social-media">
-          <a href="#"><img src="icons/twitter.png" alt="twitter" class="social-icons"></a>
-          <a href="#"><img src="icons/facebook.png" alt="facebook" class="social-icons"></a>
-          <a href="#"><img src="icons/instagram.png" alt="instagram" class="social-icons"></a>
-          <a href="#"><img src="icons/youtube.png" alt="youtube" class="social-icons"></a>
-          <a href="#"><img src="icons/linkedin.png" alt="linkedin" class="social-icons"></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter" alt="twitter icon" id="twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook" alt="facebook icon" id="facebook"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram" alt="instagram icon" id="instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube" alt="youtube icon" id="youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in" alt="linkedin icon" id="linked-in"></i></a>
         </div>
       </div>
     </footer>
+    <script src="js/nav-mobile.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

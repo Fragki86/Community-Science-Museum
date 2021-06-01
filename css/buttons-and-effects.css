@@ -1,7 +1,7 @@
-@keyframes scroll-in {
+/* @keyframes scroll-in {
     0% {right: -100%;}
     100% {right: 0%;}
-  }
+  } */
 
 .search-button{
     background-color: white;
@@ -49,7 +49,7 @@ footer button:hover {
     border: 1px solid var(--blue);
     text-align: center;
     width: 80px;
-
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .read-more:hover {

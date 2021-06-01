@@ -1,9 +1,12 @@
 const searchAPI = "https://museum.georgiosf.no/wp-json/wp/v2/posts?_embed";
 const searchInput = document.querySelector("#search");
 const submitBtn = document.querySelector(".search-button");
-
+const searchDiv = document.querySelector(".search-div");
+const searchResults = document.querySelector(".search-results");
 
 searchInput.addEventListener("input", () => searchShows(searchInput.value));
+
+
 
 
 const searchShows = async (checkAll) => {
@@ -17,6 +20,7 @@ const searchShows = async (checkAll) => {
             const regex = new RegExp(`${checkAll}`, "gi");
             return (
                 shows.title.rendered.match(regex)
+                // shows.content.rendered.match(regex)
             );
 
         });
@@ -24,6 +28,7 @@ const searchShows = async (checkAll) => {
         if (checkAll.length === 0) {
             showCheck = [];
             searchResults.innerHTML = "";
+            searchDiv.style.display = "none";
         }
         deliverHTML(showCheck);
 
@@ -36,12 +41,18 @@ const deliverHTML = (showCheck) => {
     if (showCheck.length > 0) {
         const finalResult = showCheck
         .map((match) => `
+        <a href="exhibitions-details.html?id=${match.id}">
+            <li>${match.title.rendered}</li>
+        </a>
         `)
         .join("");
         searchResults.innerHTML = finalResult;
+        searchDiv.style.display = "block"
     }
 }
-
+{/* <a href="exhibitions-details.html?id=${match.id}">
+            <li>${match.title.rendered}</li>
+        </a> */}
     
 // const searchIcon = document.querySelector(".search-icon");
 // const searchArea = document.querySelector(".search-div");

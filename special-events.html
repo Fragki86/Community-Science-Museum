@@ -26,24 +26,27 @@
           <img src="icons/logo-big.png" class="logo-desktop" alt="The museum's logo is an atom">
         </a>
         <section id="nav-bar">
-          <input type="checkbox" id="hamburger-menu" />
           <label for="hamburger-menu" class="ham">
             <i class="fas fa-bars"></i>
           </label>
-          <nav id="nav">
+          <nav id="nav" class="nav-m">
             <div class="nav-desktop">
             <ul>
               <li><img src="icons/museum.png" alt="icon of a museum"><a href="index.html">Museum</a></li>
-              <li><img src="icons/exhibition.png" alt="icon of an exhibition"><a href="exhibitions.html">Exhibitions</a></li>
+              <li class="li-adjust-exhibitions"><img src="icons/exhibition.png" alt="icon of an exhibition"><a href="exhibitions-list.html">Exhibitions</a></li>
               <li class="li-adjust-explore"><img src="icons/explore.png" alt="icon of test tubes"><a href="explore.html">Explore</a></li>
               <li class="li-adjust-events"><img src="icons/events.png" alt="icon of a party hat"><a href="special-events.html" class="current">Events</a></li>
               <li class="li-adjust-visit"><img src="icons/visit.png" alt="icon of a bus"><a href="visit.html">Visit</a></li>
-              <li class="search-bar-form-desktop"><form method="POST" action="#" class="search-form">
+              <li class="search-bar-form-desktop"><form method="POST" action="visit.html" class="search-form">
                 <label for="search"></label>
                 <input type="search" name="search" id="search" placeholder=" Search" aria-label="search-form">
-                <button type="submit" class="search-button" aria-label="press to search"><i class="fas fa-search"></i></button>
+                <a href="search.html"><button type="button" class="search-button" aria-label="press to search"><i class="fas fa-search"></i></button></a>
               </form></li>
             </ul>
+            <div class="search-div">
+              <ul class="search-results">
+              </ul>
+            </div>
             </div>
           </nav>
         </section>
@@ -114,13 +117,15 @@
         <div>
         <h2>Find us also</h2>
           <div class="social-media">
-            <a href="#"><img src="icons/twitter.png" alt="twitter" class="social-icons"></a>
-            <a href="#"><img src="icons/facebook.png" alt="facebook" class="social-icons"></a>
-            <a href="#"><img src="icons/instagram.png" alt="instagram" class="social-icons"></a>
-            <a href="#"><img src="icons/youtube.png" alt="youtube" class="social-icons"></a>
-            <a href="#"><img src="icons/linkedin.png" alt="linkedin" class="social-icons"></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter" alt="twitter icon" id="twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook" alt="facebook icon" id="facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram" alt="instagram icon" id="instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube" alt="youtube icon" id="youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in" alt="linkedin icon" id="linked-in"></i></a>
           </div>
         </div>
     </footer>
+    <script src="js/nav-mobile.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>

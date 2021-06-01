@@ -7,14 +7,12 @@ const id = params.get("id");
 const exhibDetailsURL = "https://museum.georgiosf.no/wp-json/wp/v2/posts/" + id;
 
 
-
 detailsContainer.innerHTML = "";
 async function bringDetails() {
     try {
         const response = await fetch(exhibDetailsURL);
         const results = await response.json();
-        
-        console.log(results);
+
         showDetails(results);
 
     } catch(error) {
@@ -28,8 +26,6 @@ function showDetails(results) {
         <h1 class="h1-starter">${results.title.rendered}</h1>
         <div class="explore-grid">
         ${results.content.rendered}
-        </div>
-
-    
+        </div>    
     `
 }
