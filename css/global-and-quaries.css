@@ -503,12 +503,28 @@ nav a {
   display: flex;
   color: var(--brown);
   transition: font-size 0.3s;
+  
 }
 
+
+
 nav a:hover:not(.current){
-  border-bottom: 1px solid var(--orange);
-  font-size: 1.1rem;
+  /* border-bottom: 1px solid var(--orange);
+  font-size: 1.1rem; */
+  animation-name: jump;
+  animation-duration: 0.4s;
 }
+
+@keyframes jump{
+  0%{padding-bottom: 0px;}
+  50%{padding-bottom: 15px;}
+  100%{padding-bottom: 0px;}
+
+
+
+}
+
+
 
 nav img {
   padding-right: 10px;
