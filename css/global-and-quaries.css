@@ -411,7 +411,9 @@ label {
   color: #0e76a8;
 }
 
-
+.menu-icons {
+  width: 10%;
+}
 
 
 
@@ -491,6 +493,9 @@ nav li {
 .li-adjust-visit {
   margin-left: -25px;
 }
+
+
+
 
 nav a {
   font-size: 0.9rem;
