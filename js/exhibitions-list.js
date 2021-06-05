@@ -2,6 +2,7 @@ const exhContainer = document.querySelector(".all-exhibitions-container");
 const callPosts = "https://museum.georgiosf.no/wp-json/wp/v2/posts?_embed";
 
 
+/*------------------------   Fetch api -----------------------------*/
 async function getExhibitions() {
     try {
         const response = await fetch(callPosts);
@@ -19,7 +20,7 @@ async function getExhibitions() {
 
 getExhibitions();
 
-
+/*------------------------   Show innerHTML -----------------------------*/
 function exhibitions(resultsPosts) {
     for (let i = 0; i < resultsPosts.length; i++) {
         console.log(resultsPosts[i]);
