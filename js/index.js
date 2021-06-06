@@ -7,7 +7,6 @@ const container = document.querySelector(".exhibitions-desktop");
 async function index() {
     const response = await fetch(callApiIndex);
     const indexResults = await response.json();
-    console.log(indexResults)
 
     container.innerHTML = "";
     featuredExhibitions(indexResults);

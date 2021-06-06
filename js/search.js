@@ -14,8 +14,6 @@ const searchShows = async (checkAll) => {
         const response = await fetch(searchAPI);
         const results = await response.json();
 
-        console.log(results);
-
         let showCheck = results.filter((shows) => {
             const regex = new RegExp(`${checkAll}`, "gi");
             return (

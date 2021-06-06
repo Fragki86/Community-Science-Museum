@@ -23,7 +23,6 @@ getExhibitions();
 /*------------------------   Show innerHTML -----------------------------*/
 function exhibitions(resultsPosts) {
     for (let i = 0; i < resultsPosts.length; i++) {
-        console.log(resultsPosts[i]);
 
         let className = ""; 
         if (i % 2 === 0) {
